@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		035F80051CE1E46000F9AE70 /* ddc.c in Sources */ = {isa = PBXBuildFile; fileRef = 035F7FD21CE1E46000F9AE70 /* ddc.c */; };
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
-		79897DB11664F809008C7D5C /* ddc.c in Sources */ = {isa = PBXBuildFile; fileRef = 79897D7A1664F808008C7D5C /* ddc.c */; };
 		7D2FF98311406B0100707C79 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2FF98211406B0100707C79 /* AppController.m */; };
 		7D2FF98611406B2C00707C79 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D2FF98411406B2C00707C79 /* icon.png */; };
 		7D2FF98711406B2C00707C79 /* icon-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D2FF98511406B2C00707C79 /* icon-alt.png */; };
@@ -20,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		035F7FD21CE1E46000F9AE70 /* ddc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ddc.c; sourceTree = "<group>"; };
+		035F7FD31CE1E46000F9AE70 /* ddc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ddc.h; sourceTree = "<group>"; };
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -28,8 +30,6 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* MyStatusItem_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStatusItem_Prefix.pch; sourceTree = "<group>"; };
-		79897D7A1664F808008C7D5C /* ddc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ddc.c; sourceTree = "<group>"; };
-		79897D7B1664F808008C7D5C /* ddc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ddc.h; sourceTree = "<group>"; };
 		7D2FF98111406B0100707C79 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		7D2FF98211406B0100707C79 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		7D2FF98411406B2C00707C79 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -53,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		035F7F8C1CE1E46000F9AE70 /* ddc */ = {
+			isa = PBXGroup;
+			children = (
+				035F7FD21CE1E46000F9AE70 /* ddc.c */,
+				035F7FD31CE1E46000F9AE70 /* ddc.h */,
+			);
+			path = ddc;
+			sourceTree = "<group>";
+		};
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,21 +135,11 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				79897D331664F808008C7D5C /* ddc */,
+				035F7F8C1CE1E46000F9AE70 /* ddc */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		79897D331664F808008C7D5C /* ddc */ = {
-			isa = PBXGroup;
-			children = (
-				79897D7A1664F808008C7D5C /* ddc.c */,
-				79897D7B1664F808008C7D5C /* ddc.h */,
-			);
-			name = ddc;
-			path = "../DDC-CI-Tools-for-OS-X/ddc";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +168,8 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BrightnessMenulet" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
@@ -205,9 +206,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				035F80051CE1E46000F9AE70 /* ddc.c in Sources */,
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				7D2FF98311406B0100707C79 /* AppController.m in Sources */,
-				79897DB11664F809008C7D5C /* ddc.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,9 +255,16 @@
 					"\"$(SRCROOT)/../DDC-CI-Tools-for-OS-X/ddc/build/ddc.build/Release/ddc.build/Objects-normal/x86_64\"",
 					"\"$(SRCROOT)/../DDC-CI-Tools-for-OS-X/ddc/build/Debug\"",
 					"\"$(SRCROOT)/../DDC-CI-Tools-for-OS-X/ddc/build/Release\"",
+					"$(PROJECT_DIR)/ddc/build/ddc.build/Release/ddc.build/Objects-normal/i386",
+					"$(PROJECT_DIR)/ddc/build/ddc.build/Release/ddc.build/Objects-normal/ppc",
+					"$(PROJECT_DIR)/ddc/build/ddc.build/Release/ddc.build/Objects-normal/x86_64",
+					"$(PROJECT_DIR)/ddc/build/Debug",
+					"$(PROJECT_DIR)/ddc/build/Release",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "Brightness Menulet";
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -278,17 +286,24 @@
 					"\"$(SRCROOT)/../DDC-CI-Tools-for-OS-X/ddc/build/ddc.build/Release/ddc.build/Objects-normal/x86_64\"",
 					"\"$(SRCROOT)/../DDC-CI-Tools-for-OS-X/ddc/build/Debug\"",
 					"\"$(SRCROOT)/../DDC-CI-Tools-for-OS-X/ddc/build/Release\"",
+					"$(PROJECT_DIR)/ddc/build/ddc.build/Release/ddc.build/Objects-normal/i386",
+					"$(PROJECT_DIR)/ddc/build/ddc.build/Release/ddc.build/Objects-normal/ppc",
+					"$(PROJECT_DIR)/ddc/build/ddc.build/Release/ddc.build/Objects-normal/x86_64",
+					"$(PROJECT_DIR)/ddc/build/Debug",
+					"$(PROJECT_DIR)/ddc/build/Release",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "Brightness Menulet";
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
+				"SDKROOT[arch=*]" = macosx;
 			};
 			name = Release;
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -296,20 +311,21 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				PRODUCT_NAME = "Brightness Menulet";
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				PRODUCT_NAME = "Brightness Menulet";
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
